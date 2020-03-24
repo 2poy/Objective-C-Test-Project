@@ -13,6 +13,7 @@
 		3A00349D242A4E2500796503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A00349B242A4E2500796503 /* Main.storyboard */; };
 		3A00349F242A4E2700796503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00349E242A4E2700796503 /* Assets.xcassets */; };
 		3A0034A2242A4E2700796503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0034A0242A4E2700796503 /* LaunchScreen.storyboard */; };
+		3A0034AB242A4E8400796503 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0034AA242A4E8400796503 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		3A00349E242A4E2700796503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0034A1242A4E2700796503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0034A3242A4E2700796503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0034A9242A4E8400796503 /* Objective C Test Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective C Test Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A0034AA242A4E8400796503 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				3A00349E242A4E2700796503 /* Assets.xcassets */,
 				3A0034A0242A4E2700796503 /* LaunchScreen.storyboard */,
 				3A0034A3242A4E2700796503 /* Info.plist */,
+				3A0034AA242A4E8400796503 /* Test.m */,
+				3A0034A9242A4E8400796503 /* Objective C Test Project-Bridging-Header.h */,
 			);
 			path = "Objective C Test Project";
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				TargetAttributes = {
 					3A003491242A4E2500796503 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A00349A242A4E2500796503 /* ViewController.swift in Sources */,
+				3A0034AB242A4E8400796503 /* Test.m in Sources */,
 				3A003496242A4E2500796503 /* AppDelegate.swift in Sources */,
 				3A003498242A4E2500796503 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = URQ67JPBKK;
 				INFOPLIST_FILE = "Objective C Test Project/Info.plist";
@@ -293,6 +301,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Egor.Soloviev.Objective-C-Test-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective C Test Project/Objective C Test Project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = URQ67JPBKK;
 				INFOPLIST_FILE = "Objective C Test Project/Info.plist";
@@ -311,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Egor.Soloviev.Objective-C-Test-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective C Test Project/Objective C Test Project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
